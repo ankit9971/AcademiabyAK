@@ -22,7 +22,6 @@ import com.google.android.gms.ads.MobileAds;
 public class AcademicPlanner extends AppCompatActivity {
     WebView academic;
     ProgressBar Pbar;
-    AdView adview;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
