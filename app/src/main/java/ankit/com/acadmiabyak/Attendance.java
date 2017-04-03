@@ -30,7 +30,7 @@ public class Attendance extends AppCompatActivity {
         attendance.getSettings().setCacheMode(WebSettings.LOAD_CACHE_ELSE_NETWORK);
         attendance.loadUrl("https://academia.srmuniv.ac.in/#View:My_Attendance");
         attendance.getSettings().setBuiltInZoomControls(true);
-        attendance.getSettings().setDisplayZoomControls(true);
+        attendance.getSettings().setDisplayZoomControls(false);
         attendance.setWebViewClient(new WebViewClient()
         {
             @Override

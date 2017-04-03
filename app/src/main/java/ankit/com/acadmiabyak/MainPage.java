@@ -26,7 +26,6 @@ public class MainPage extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.content_main_page);
         setTitle("Academia by AK");
-
         b1= (Button) findViewById(R.id.b1);
         b2= (Button) findViewById(R.id.b2);
         b3= (Button) findViewById(R.id.b3);
@@ -75,9 +74,6 @@ public class MainPage extends AppCompatActivity{
                 startActivity(i);
             }
         });
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-
     }
 
     private void batch2() {

@@ -27,7 +27,7 @@ public class Courses extends AppCompatActivity {
         setTitle("Couses");
         courses.getSettings().setJavaScriptEnabled(true);
         courses.getSettings().setBuiltInZoomControls(true);
-        courses.getSettings().setDisplayZoomControls(true);
+        courses.getSettings().setDisplayZoomControls(false);
         courses.loadUrl("https://academia.srmuniv.ac.in/#Page:Course_Confirmation_First_Year");
         courses.setWebViewClient(new WebViewClient()
         {

@@ -3,6 +3,7 @@ package ankit.com.acadmiabyak;
 import android.content.Intent;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -28,7 +29,7 @@ public class LoginPage extends AppCompatActivity {
         setTitle("Login Page");
         login.getSettings().setJavaScriptEnabled(true);
         login.getSettings().setBuiltInZoomControls(true);
-        login.getSettings().setDisplayZoomControls(true);
+        login.getSettings().setDisplayZoomControls(false);
         login.loadUrl("https://academia.srmuniv.ac.in/");
         login.setWebViewClient(new WebViewClient()
         {

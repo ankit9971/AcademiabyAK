@@ -15,9 +15,14 @@ import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+
 public class AcademicPlanner extends AppCompatActivity {
     WebView academic;
     ProgressBar Pbar;
+    AdView adview;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,9 +30,13 @@ public class AcademicPlanner extends AppCompatActivity {
         academic = (WebView) findViewById(R.id.academic);
         Pbar= (ProgressBar) findViewById(R.id.Pbar);
         setTitle("Academic");
+        AdView mAdView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+        MobileAds.initialize(this, "ca-app-pub-3940256099942544~3347511713");
         academic.getSettings().setJavaScriptEnabled(true);
         academic.getSettings().setBuiltInZoomControls(true);
-        academic.getSettings().setDisplayZoomControls(true);
+        academic.getSettings().setDisplayZoomControls(false);
         academic.loadUrl("https://academia.srmuniv.ac.in/#View:Academic_Planner_2016_17_EVEN_E_T");
         academic.setWebViewClient(new WebViewClient() {
             @Override

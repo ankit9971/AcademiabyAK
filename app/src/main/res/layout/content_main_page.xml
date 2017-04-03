@@ -1,37 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="ankit.com.acadmiabyak.MainPage">
-    <android.support.design.widget.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
-
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
-
-    </android.support.design.widget.AppBarLayout>
 
 
     <TextView
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="40dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Academia"
+        android:text="@string/academia"
         android:id="@+id/t1"
         android:layout_centerHorizontal="true"
-        android:textSize="40dp"/>
+        android:textSize="40sp"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="login"
+        android:text="@string/login"
         android:id="@+id/b1"
         android:layout_marginTop="30dp"
         android:layout_centerHorizontal="true"
@@ -45,7 +32,7 @@
         android:id="@+id/b2"
         android:layout_marginTop="30dp"
         android:layout_centerHorizontal="true"
-        android:text="Attendance"
+        android:text="@string/attendance"
         android:ems="10"/>
     <Button
         android:layout_width="wrap_content"
@@ -54,7 +41,7 @@
         android:id="@+id/b3"
         android:layout_marginTop="30dp"
         android:layout_centerHorizontal="true"
-        android:text="Academic Planner"
+        android:text="@string/academic_planner"
         android:ems="10"/>
 
     <Button
@@ -64,8 +51,9 @@
         android:id="@+id/b4"
         android:layout_marginTop="30dp"
         android:layout_centerHorizontal="true"
-        android:text="Time table"
+        android:text="@string/time_table"
         android:ems="10"/>
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -73,7 +61,7 @@
         android:id="@+id/b5"
         android:layout_marginTop="30dp"
         android:layout_centerHorizontal="true"
-        android:text="Courses"
+        android:text="@string/courses"
         android:ems="10"/>
     <WebView
         android:layout_width="0dp"

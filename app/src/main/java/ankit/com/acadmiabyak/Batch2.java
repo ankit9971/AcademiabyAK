@@ -29,7 +29,7 @@ public class Batch2 extends AppCompatActivity {
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         batch2.getSettings().setBuiltInZoomControls(true);
-        batch2.getSettings().setDisplayZoomControls(true);
+        batch2.getSettings().setDisplayZoomControls(false);
         batch2.loadUrl("https://academia.srmuniv.ac.in/#View:Common_Time_Table_Batch_2");
         batch2.setWebViewClient(new WebViewClient()
         {
